@@ -18,7 +18,9 @@ with open('derp.json') as data_file:
 ##pprint(sorted_obj)
 
 #sorted_obj = sorted(sorted_obj, key=sorted_obj.get)
+#only works on top level json objects(not for arrays)
 sorted(data)
+#compare two sorted jsons
 #sorted(a.items()) == sorted(b.items())
 #pprint(sorted_obj)
 
