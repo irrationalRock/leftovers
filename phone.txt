@@ -1,0 +1,12 @@
+phone needs to have two brackets
+^\([\d ]+\)[ -]?[\d]*[ -]?[\d]*$
+phone needs to have two brackets with extension
+^\([\d ]+\)[ -]?[\d]*[ -]?[\d]*[ ]EXT\.[\d]+$
+phone with no brackets
+^[\d ]*[ -]?[\d]*[ -]?[\d]*$
+phone with no backets but extension:
+^[\d ]*[ -]?[\d]*[ -]?[\d]*[ ]EXT\.[\d]+$
+
+
+combine(tested):
+(^\([\d ]+\)[ -]?[\d]*[ -]?[\d]*$)|(^\([\d ]+\)[ -]?[\d]*[ -]?[\d]*[ ]EXT\.[\d]+$)|(^[\d ]*[ -]?[\d]*[ -]?[\d]*$)|(^[\d ]*[ -]?[\d]*[ -]?[\d]*[ ]EXT\.[\d]+$)
